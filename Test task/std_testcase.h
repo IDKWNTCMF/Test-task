@@ -52,12 +52,6 @@
 #include <sys/stat.h>
 #ifdef _WIN32
 #include <io.h> /* for open/close etc */
-#else
-/* Linux/GNU wants this macro, otherwise stdint.h and limits.h are mostly useless */
-# define __STDC_LIMIT_MACROS 1
-
-#define ALLOCA alloca
-#endi
 #endif
 
 #ifdef __cplusplus
